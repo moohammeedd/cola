@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+    height: 100vh;
+}
+nav{
+    background-image: linear-gradient(#222,#333);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right:30px ;
+}
+nav ul a{
+    margin-right: 15px;
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 20px;
+    transition: .3s;
+    border-radius: 7px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+nav ul a:hover{
+    background-image:linear-gradient(#111,#333) ;
+    color: red;
+    scale: .8;
+}
+nav .logo{
+    width: 100px;
+}
+nav #bars{
+    color: red;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: center;
+    right: 50px;
+    display: none;
+}
+.hi{
+    height: 120px;
+}
+@media (max-width:800px){
+    nav ul{
+        background-color: #333;
+        position: absolute;
+        left: 0;
+        top: 110px;
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        gap: 30px;
+        height: 0;
+        overflow: hidden;
+        z-index: 5;
+    }
+    nav ul a{
+        font-weight:600 ;
+        text-align: center;
+        margin-top: 20px;
+    }
+    nav #bars{
+        display: block;
+        z-index: 10;
+    }
+}
+.hi{
+    height: 210px;
+}
+
+.back{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.back .content h1{
+    color: red;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px #333;
+}
+.back .content span{
+    color: #fff;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    display: block;
+    
+}
+.back .content button{
+    background-image: linear-gradient(#111,#333);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: red;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.back .content button:hover{
+    scale: .9;
+}
+.back img{
+    width: 400px;
+}
+@media (max-width:900px){
+    .back{
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left:10px ;
+        padding-right:10px ;
+    }
+    .content{
+        text-align: center;
+        width: 90%;
+        margin-top: 150px;
+    }
+    .content span{
+        text-align: center;
+        padding: 10px;
+        border-radius:022px ;
+        display: block;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .image{
+        width: 200px;
+    }
+}
